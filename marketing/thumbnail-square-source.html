@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 1200px; overflow: hidden; }
+  body {
+    font-family: -apple-system, "SF Pro Display", "Apple SD Gothic Neo", sans-serif;
+    background: #0b1120;
+    color: #e6edf7;
+    position: relative;
+  }
+  .grid {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(96,140,255,0.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(96,140,255,0.07) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+  .glow1 { position: absolute; width: 820px; height: 820px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(64,110,255,0.28), transparent 62%);
+    top: -300px; right: -240px; }
+  .glow2 { position: absolute; width: 760px; height: 760px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(46,196,182,0.16), transparent 62%);
+    bottom: -340px; left: -220px; }
+
+  .wrap { position: absolute; inset: 0; padding: 88px 84px; display: flex; flex-direction: column; }
+
+  .badge-row { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
+  .badge {
+    font-size: 26px; font-weight: 700; letter-spacing: 0.08em;
+    padding: 10px 22px; border-radius: 999px;
+  }
+  .badge.en-ko { background: rgba(46,196,182,0.14); color: #5fe3d3; border: 2px solid rgba(95,227,211,0.45); }
+  .badge.lab { background: rgba(96,140,255,0.14); color: #9db8ff; border: 2px solid rgba(157,184,255,0.4); }
+
+  h1 { margin-top: 56px; font-size: 116px; font-weight: 800; line-height: 1.05; letter-spacing: -0.015em; }
+  h1 .accent { color: #7da2ff; }
+  .subtitle { margin-top: 30px; font-size: 40px; font-weight: 600; color: #aebcd4; line-height: 1.35; }
+
+  .pillars { margin-top: 58px; display: flex; flex-direction: column; gap: 20px; }
+  .pillar {
+    display: flex; align-items: baseline; gap: 24px;
+    border-radius: 18px; padding: 26px 32px;
+    background: rgba(20,31,54,0.85); border: 2px solid rgba(125,162,255,0.22);
+  }
+  .pillar .num { font-size: 27px; font-weight: 800; color: #5fe3d3; letter-spacing: 0.12em; }
+  .pillar .name { font-size: 40px; font-weight: 800; }
+  .pillar .name-en { font-size: 26px; font-weight: 600; color: #8fa1bd; margin-left: auto; }
+
+  .footer { margin-top: auto; display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; }
+  .hook { font-size: 34px; font-weight: 700; color: #cdd9ec; line-height: 1.4; }
+  .hook .warn { color: #ffd166; }
+  .brand { font-size: 27px; font-weight: 700; color: #6f8199; white-space: nowrap; }
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="glow1"></div>
+  <div class="glow2"></div>
+  <div class="wrap">
+    <div class="badge-row">
+      <span class="badge en-ko">EN + KO</span>
+      <span class="badge lab">30-MIN LAB · 실기기 검증</span>
+    </div>
+    <h1>The Agentic<br>Coding <span class="accent">Playbook</span></h1>
+    <div class="subtitle">AI 에이전트에게 일을 시키는 3가지 규율<br>— 그리고 병렬 에이전트 실습</div>
+    <div class="pillars">
+      <div class="pillar">
+        <span class="num">01</span><span class="name">메타 프롬프팅</span><span class="name-en">Meta Prompting</span>
+      </div>
+      <div class="pillar">
+        <span class="num">02</span><span class="name">하네스 엔지니어링</span><span class="name-en">Harness Engineering</span>
+      </div>
+      <div class="pillar">
+        <span class="num">03</span><span class="name">루프 엔지니어링</span><span class="name-en">Loop Engineering</span>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="hook">git 충돌 0건인데 테스트가 깨진다?<br><span class="warn">"의미적 충돌"</span>을 실습으로 배우세요</div>
+      <div class="brand">Orca ADE × Claude Code</div>
+    </div>
+  </div>
+</body>
+</html>
