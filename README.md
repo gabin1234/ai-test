@@ -1,3 +1,18 @@
+## 신규 후보자 AI 테스트 안내
+
+1. 아래 `docs/` 3편을 순서대로 읽습니다.
+2. **4번 문서(Hands-On Lab)를 문서에 나온 그대로 직접 수행**합니다. Step 0부터 끝까지 실습하세요.
+3. 실습 중 문서 설명과 실제 동작이 다르거나, 막히는 지점, 사실 오류, 개선하면 좋을 점을 스스로 찾습니다.
+4. 이 저장소에 **Issue를 새로 생성**해 발견한 문제를 하나씩 보고합니다 (별도 권한이나 fork 없이 바로 작성 가능). 각 issue에는 다음을 포함하세요.
+   - 위치 (파일명:줄 또는 섹션)
+   - 재현 방법과 실제 결과
+   - 문제가 되는 이유
+   - (선택) 수정 제안
+
+정답지는 제공되지 않습니다. 직접 실습하며 찾은 내용만 제출해 주세요.
+
+---
+
 # The Agentic Coding Playbook
 
 A training series on the methodology of putting AI coding agents (Claude Code, Codex, …) to work —
